@@ -2,11 +2,13 @@ const express = require('express');
 const request = require('request');
 const app = express();
 
+// Allow cross-origin (CORS)
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   next();
 });
 
+// Stream route
 app.get('/stream', (req, res) => {
   const streamUrl = 'https://zekonew.newkso.ru/zeko/premium300/mono.m3u8';
 
@@ -20,7 +22,8 @@ app.get('/stream', (req, res) => {
   request
     .get({ url: streamUrl, headers })
     .on('error', (err) => {
-      res.status(500).send('Stream request failed: ' + err.message);
+      console.error('Proxy Error:', err.message);
+      res.status(500).send('Stream failed: ' + err.message);
     })
     .pipe(res);
 });
