@@ -2,33 +2,26 @@ const express = require('express');
 const request = require('request');
 const app = express();
 
-// Allow cross-origin (CORS)
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   next();
 });
 
-// Stream route
 app.get('/stream', (req, res) => {
-  const streamUrl = 'https://zekonew.newkso.ru/zeko/premium300/mono.m3u8';
-
+  const url = 'https://wikinew.newkso.ru/wiki/ustvbtn/mono.m3u8';
   const headers = {
-    'User-Agent': 'Mozilla/5.0 (Android 13; Mobile; rv:139.0) Gecko/139.0 Firefox/139.0',
-    'Referer': 'https://yoxplay.xyz/',
-    'Origin': 'https://yoxplay.xyz',
+    'Host': 'wikinew.newkso.ru',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0',
+    'Accept': '*/*',
+    'Accept-Language': 'en-US',
     'Accept-Encoding': 'gzip, deflate, br, zstd',
+    'Origin': 'https://topembed.pw',
+    'Referer': 'https://topembed.pw/',
+    'Connection': 'keep-alive'
   };
 
-  request
-    .get({ url: streamUrl, headers })
-    .on('error', (err) => {
-      console.error('Proxy Error:', err.message);
-      res.status(500).send('Stream failed: ' + err.message);
-    })
-    .pipe(res);
+  request({ url, headers }).pipe(res);
 });
 
-const PORT = process.env.PORT || 7860;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Proxy running on port ${port}`));
