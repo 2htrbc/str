@@ -8,23 +8,26 @@ app.use((req, res, next) => {
 });
 
 app.get('/stream', (req, res) => {
-  const url = 'https://yfkijlwj1wm320xr.youaresoselfish.online/v3/director/VE1Y2MyYTFhM2RmNmJjLTk1MGItZjdiNC03YTQ1LTA3ZTdkMmYy/master.m3u8?md5=D13ZqEXuyCRqIbwLoafbYw&expires=1752753885&t=1752710685'; // your real stream URL
+  const streamUrl = 'https://zekonew.newkso.ru/zeko/premium300/mono.m3u8';
 
   const headers = {
-    'Host': 'yfkijlwj1wm320xr.youaresoselfish.online',
-    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0',
-    'Accept': '*/*',
-    'Accept-Language': 'en-US',
-    'Accept-Encoding': 'gzip, deflate, br, zstd',
-    'Origin': 'https://veplay.top',
-    'Referer': 'https://veplay.top/',
-    'Connection': 'keep-alive'
+    'User-Agent': 'Mozilla/5.0 (Android 13; Mobile; rv:139.0) Gecko/139.0 Firefox/139.0',
+    'Referer': 'https://yoxplay.xyz/',
+    'Origin': 'https://yoxplay.xyz',
+    'Accept-Encoding': 'gzip, deflate, br',
   };
 
-  request({ url, headers }).on('error', err => {
-    res.status(500).send('Stream error');
-  }).pipe(res);
+  // Set MIME type for HLS playlist
+  res.setHeader('Content-Type', 'application/vnd.apple.mpegurl');
+
+  // Stream with error handling
+  request({ url: streamUrl, headers })
+    .on('error', (err) => {
+      res.status(500).send('Stream error: ' + err.message);
+    })
+    .pipe(res);
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Proxy running on port ${port}`));
+app.listen(7860, () => {
+  console.log('✅ Server running on http://localhost:7860');
+});
