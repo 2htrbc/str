@@ -8,7 +8,8 @@ app.use((req, res, next) => {
 });
 
 app.get('/stream', (req, res) => {
-  const url = 'https://wikinew.newkso.ru/wiki/ustvbtn/mono.m3u8';
+  const url = 'https://wikinew.newkso.ru/wiki/ustvbtn/mono.m3u8'; // your real stream URL
+
   const headers = {
     'Host': 'wikinew.newkso.ru',
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0',
@@ -20,7 +21,9 @@ app.get('/stream', (req, res) => {
     'Connection': 'keep-alive'
   };
 
-  request({ url, headers }).pipe(res);
+  request({ url, headers }).on('error', err => {
+    res.status(500).send('Stream error');
+  }).pipe(res);
 });
 
 const port = process.env.PORT || 3000;
