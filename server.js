@@ -8,16 +8,16 @@ app.use((req, res, next) => {
 });
 
 app.get('/stream', (req, res) => {
-  const url = 'https://wikinew.newkso.ru/wiki/ustvbtn/mono.m3u8'; // your real stream URL
+  const url = 'https://yfkijlwj1wm320xr.youaresoselfish.online/v3/director/VE1Y2MyYTFhM2RmNmJjLTk1MGItZjdiNC03YTQ1LTA3ZTdkMmYy/master.m3u8?md5=D13ZqEXuyCRqIbwLoafbYw&expires=1752753885&t=1752710685'; // your real stream URL
 
   const headers = {
-    'Host': 'wikinew.newkso.ru',
+    'Host': 'yfkijlwj1wm320xr.youaresoselfish.online',
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0',
     'Accept': '*/*',
     'Accept-Language': 'en-US',
     'Accept-Encoding': 'gzip, deflate, br, zstd',
-    'Origin': 'https://topembed.pw',
-    'Referer': 'https://topembed.pw/',
+    'Origin': 'https://veplay.top',
+    'Referer': 'https://veplay.top/',
     'Connection': 'keep-alive'
   };
 
