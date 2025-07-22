@@ -1,63 +1,82 @@
 const express = require('express');
+const request = require('request');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// DASH (MPD) DRM Streams
-const drmStreams = {
-  kapamilya: {
-    name: 'Kapamilya Channel HD',
-    mpd: 'http://143.44.136.110:6910/001/2/ch00000090990000001286/manifest.mpd?virtualDomain=001.live_hls.zte.com',
-    license: 'http://143.44.136.74:9443/widevine/?deviceId=02:00:00:00:00:00',
-    type: 'com.widevine.alpha',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKm2Lrh11LXGy-bF04OpzO3M4xMrbRigxnTzbIFP5gMYKsSmAkwZnw_wsu&s=10'
+// Named stream list
+const streams = {
+  mrbean: {
+    name: 'Mr. Bean',
+    url: 'https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8'
+  },
+  kartoon: {
+    name: 'Kartoon Channel',
+    url: 'https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-kartoonchannel-samsungnz/playlist.m3u8'
+  },
+  kidsflix: {
+    name: 'KidsFlix',
+    url: 'https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50'
+  },
+  a2z: {
+    name: 'a2z',
+    url: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5.m3u8'
   }
 };
 
-// CORS and Logging Middleware
+// Middleware: CORS + Logging
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.originalUrl}`);
   next();
 });
 
-// DASH manifest route
-app.get('/manifest.mpd', (req, res) => {
-  const stream = drmStreams[req.query.stream];
-  if (!stream) return res.status(400).send('Invalid stream.');
+// Playlist route: /playlist.m3u8?stream=mrbean
+app.get('/playlist.m3u8', (req, res) => {
+  const key = req.query.stream;
+  const stream = streams[key];
 
-  res.redirect(stream.mpd); // Redirect directly to the real MPD URL
-});
+  if (!stream) return res.status(400).send('Invalid stream name.');
 
-// DRM license info route (optional helper for clients)
-app.get('/license-info', (req, res) => {
-  const stream = drmStreams[req.query.stream];
-  if (!stream) return res.status(400).send('Invalid stream.');
+  request.get(stream.url, (err, response, body) => {
+    if (err || response.statusCode !== 200) {
+      return res.status(500).send('Failed to fetch playlist.');
+    }
 
-  res.json({
-    license_key: stream.license,
-    license_type: stream.type,
-    mpd: stream.mpd
+    // Rewrite all .ts URLs to go through this server
+    const rewritten = body.replace(/(https?:\/\/[^\s]+)/g, (url) => {
+      return `/segment.ts?url=${encodeURIComponent(url)}`;
+    });
+
+    res.setHeader('Content-Type', 'application/vnd.apple.mpegurl');
+    res.send(rewritten);
   });
 });
 
-// Home page - shows available DRM streams
+// Segment proxy route
+app.get('/segment.ts', (req, res) => {
+  const url = req.query.url;
+  if (!url || !url.startsWith('http')) return res.status(400).send('Invalid segment URL.');
+
+  request
+    .get(url)
+    .on('error', () => res.status(500).send('Segment error.'))
+    .pipe(res);
+});
+
+// Homepage: list all streams with names
 app.get('/', (req, res) => {
-  const list = Object.entries(drmStreams)
-    .map(([key, s]) => `
-      <li>
-        <img src="${s.logo}" alt="${s.name}" style="height:40px;vertical-align:middle;" />
-        <strong>${s.name}</strong><br/>
-        ➤ <a href="/manifest.mpd?stream=${key}">Play MPD</a> |
-        <a href="/license-info?stream=${key}">View License Info</a>
-      </li>
-    `).join('');
+  const list = Object.entries(streams).map(
+    ([key, stream]) => `<li><a href="/playlist.m3u8?stream=${key}">${stream.name}</a></li>`
+  ).join('');
 
   res.send(`
-    <h2>🎥 DASH DRM Proxy Server</h2>
+    <h2>🎬 HLS Proxy Server</h2>
+    <p>Select a stream below:</p>
     <ul>${list}</ul>
   `);
 });
 
+// Start server
 app.listen(PORT, () => {
-  console.log(`✅ DASH Proxy Server running at http://localhost:${PORT}`);
+  console.log(`✅ HLS Proxy Server running at http://localhost:${PORT}`);
 });
