@@ -13,13 +13,13 @@ const streams = {
     name: 'Kartoon Channel',
     url: 'https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-kartoonchannel-samsungnz/playlist.m3u8'
   },
-  kidsflix: {
-    name: 'KidsFlix',
-    url: 'https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50'
-  },
   a2z: {
     name: 'a2z',
     url: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5.m3u8'
+  },
+  kidsflix: {
+    name: 'KidsFlix',
+    url: 'https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50'
   }
 };
 
