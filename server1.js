@@ -7,8 +7,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/stream', (req, res) => {
-  const streamUrl = 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/26f350e4a688a9a15a10f1c76712551f.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IjI2ZjM1MGU0YTY4OGE5YTE1YTEwZjFjNzY3MTI1NTFmIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzE3MzA4MH0.S0xFQU5FTUJFRA';
+app.get('Disney/index.m3u8', (req, res) => {
+  const streamUrl = 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/pH1yC6tG9rU2pL5zQ0nH3sI8wB4tFi.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6InBIMXlDNnRHOXJVMnBMNXpRMG5IM3NJOHdCNHRGaSIsInR5cGUiOiJwbGF5bGlzdF9hY2Nlc3MiLCJleHAiOjE3NTMxODI1MjB9.S0xFQU5FTUJFRA';
 
   const headers = {
     'User-Agent': 'Mozilla/5.0 (Android 13; Mobile; rv:139.0) Gecko/139.0 Firefox/139.0',
