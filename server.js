@@ -8,12 +8,12 @@ app.use((req, res, next) => {
 });
 
 app.get('/stream', (req, res) => {
-  const streamUrl = 'https://zekonew.newkso.ru/zeko/premium300/mono.m3u8';
+  const streamUrl = 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/26f350e4a688a9a15a10f1c76712551f.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IjI2ZjM1MGU0YTY4OGE5YTE1YTEwZjFjNzY3MTI1NTFmIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzE3MzA4MH0.S0xFQU5FTUJFRA';
 
   const headers = {
     'User-Agent': 'Mozilla/5.0 (Android 13; Mobile; rv:139.0) Gecko/139.0 Firefox/139.0',
-    'Referer': 'https://yoxplay.xyz/',
-    'Origin': 'https://yoxplay.xyz',
+    'Referer': 'https://kleanembed.online/',
+    'Origin': 'https://kleanembed.online',
     'Accept-Encoding': 'gzip, deflate, br',
   };
 
