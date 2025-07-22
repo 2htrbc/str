@@ -15,7 +15,7 @@ const streams = {
   },
   a2z: {
     name: 'a2z',
-    url: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5.m3u8'
+    url: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5_5.m3u8'
   },
   kidsflix: {
     name: 'KidsFlix',
