@@ -5,9 +5,9 @@ const PORT = process.env.PORT || 3000;
 
 // Your stream URLs (HLS master or variant .m3u8)
 const streamList = {
-  1: 'https://example.com/stream1/master.m3u8',
-  2: 'https://example.com/stream2/master.m3u8',
-  3: 'https://example.com/stream3/master.m3u8',
+  1: 'https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/chunklist_b2000000.m3u8',
+  2: 'https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-kartoonchannel-samsungnz/playlist.m3u8',
+  3: 'https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50',
 };
 
 // CORS + Logging
