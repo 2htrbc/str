@@ -3,49 +3,72 @@ const request = require('request');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// List of stream endpoints
-const streams = {
-  stream1: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/pH1yC6tG9rU2pL5zQ0nH3sI8wB4tFi.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6InBIMXlDNnRHOXJVMnBMNXpRMG5IM3NJOHdCNHRGaSIsInR5cGUiOiJwbGF5bGlzdF9hY2Nlc3MiLCJleHAiOjE3NTMxODI1MjB9.S0xFQU5FTUJFRA',
-  stream2: 'https://example.com/stream2/master.m3u8',
-  stream3: 'https://example.com/stream3/master.m3u8'
+// Your stream URLs (HLS master or variant .m3u8)
+const streamList = {
+  1: 'https://example.com/stream1/master.m3u8',
+  2: 'https://example.com/stream2/master.m3u8',
+  3: 'https://example.com/stream3/master.m3u8',
 };
 
-// Middleware for logging and CORS
+// CORS + Logging
 app.use((req, res, next) => {
-  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
   res.setHeader('Access-Control-Allow-Origin', '*');
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.originalUrl}`);
   next();
 });
 
-// Dynamically create routes for each stream
-Object.keys(streams).forEach((key) => {
-  app.get(`/${key}`, (req, res) => {
-    const streamUrl = streams[key];
-    console.log(`Proxying: ${streamUrl}`);
+// Serve .m3u8 playlists
+app.get('/playlist.m3u8', (req, res) => {
+  const streamId = req.query.stream;
+  const streamUrl = streamList[streamId];
 
-    request
-      .get(streamUrl)
-      .on('error', (err) => {
-        console.error(`Error fetching ${streamUrl}:`, err.message);
-        res.status(500).send('Stream error');
-      })
-      .pipe(res);
+  if (!streamUrl) {
+    return res.status(400).send('Invalid stream ID');
+  }
+
+  request.get(streamUrl, (err, response, body) => {
+    if (err || response.statusCode !== 200) {
+      return res.status(500).send('Failed to load playlist');
+    }
+
+    // Rewrite .ts segment URLs to go through /segment endpoint
+    const rewritten = body.replace(/(https?:\/\/[^\s]+)/g, (url) => {
+      return `/segment.ts?url=${encodeURIComponent(url)}`;
+    });
+
+    res.setHeader('Content-Type', 'application/vnd.apple.mpegurl');
+    res.send(rewritten);
   });
 });
 
-// Default route
+// Proxy .ts segments
+app.get('/segment.ts', (req, res) => {
+  const url = req.query.url;
+
+  if (!url || !url.startsWith('http')) {
+    return res.status(400).send('Invalid segment URL');
+  }
+
+  request
+    .get(url)
+    .on('error', () => res.status(500).send('Segment error'))
+    .pipe(res);
+});
+
+// Root page
 app.get('/', (req, res) => {
   res.send(`
-    <h2>IPTV Proxy Server</h2>
+    <h2>HLS Proxy Server</h2>
+    <p>Use the links below:</p>
     <ul>
-      ${Object.keys(streams)
-        .map((key) => `<li><a href="/${key}">${key}</a></li>`)
-        .join('')}
+      <li><a href="/playlist.m3u8?stream=1">Stream 1</a></li>
+      <li><a href="/playlist.m3u8?stream=2">Stream 2</a></li>
+      <li><a href="/playlist.m3u8?stream=3">Stream 3</a></li>
     </ul>
   `);
 });
 
-// Start server
+// Start
 app.listen(PORT, () => {
-  console.log(`✅ IPTV proxy server running on http://localhost:${PORT}`);
+  console.log(`✅ HLS Proxy Server running at http://localhost:${PORT}`);
 });
