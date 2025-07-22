@@ -9,12 +9,12 @@ app.use((req, res, next) => {
 });
 
 app.get('/master.m3u8', (req, res) => {
-  const streamUrl = 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/26f350e4a688a9a15a10f1c76712551f.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IjI2ZjM1MGU0YTY4OGE5YTE1YTEwZjFjNzY3MTI1NTFmIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzE3MzA4MH0.S0xFQU5FTUJFRA';
+  const streamUrl = 'https://dice-live-ap.akamaized.net/hls/live/2000230/274551-300568/exchange274551xuwnr_274551_800/chunklist.m3u8?hdntl=exp=1753251648~acl=%2f*~id=8adbb090-326d-4f9a-95a4-cd40f8663de3~data=hdntl,dWlkPVRIeWk2RnxjYTkxOGMzNi0yMjM2LTRhYjYtYTc4ZC1mNDgzY2RhYTliZjkmaXA9MTgwLjE5MC4xNzUuMjAxJmV4cD0xNzUzMjUxNjc3JmVpZD0yNzQ1NTEmY2lkPWRjZS50YXBnbyZvaWQ9MzI1JnR5cGU9TElWRQ~hmac=a6390b080c036a23c6ecedd6617ba154b1a190586fbf8c3ebb01a7cfa1e611f5';
 
   const headers = {
-    'User-Agent': 'VLC/3.0.20 LibVLC/3.0.20',
-    'Referer': 'https://kleanembed.online/',
-    'Origin': 'https://kleanembed.online',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0',
+    'Referer': 'https://app.blasttv.ph/',
+    'Origin': 'https://app.blasttv.ph',
     'Accept': '*/*',
   };
 
