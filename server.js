@@ -18,7 +18,7 @@ const streams = {
     url: 'https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50'
   },
   a2z: {
-    name: 'A2Z / TV5',
+    name: 'a2z',
     url: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5.m3u8'
   }
 };
