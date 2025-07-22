@@ -9,12 +9,12 @@ app.use((req, res, next) => {
 });
 
 app.get('/master.m3u8', (req, res) => {
-  const streamUrl = 'https://dice-live-ap.akamaized.net/hls/live/2000230/274551-300568/exchange274551xuwnr_274551_800/chunklist.m3u8?hdntl=exp=1753251648~acl=%2f*~id=8adbb090-326d-4f9a-95a4-cd40f8663de3~data=hdntl,dWlkPVRIeWk2RnxjYTkxOGMzNi0yMjM2LTRhYjYtYTc4ZC1mNDgzY2RhYTliZjkmaXA9MTgwLjE5MC4xNzUuMjAxJmV4cD0xNzUzMjUxNjc3JmVpZD0yNzQ1NTEmY2lkPWRjZS50YXBnbyZvaWQ9MzI1JnR5cGU9TElWRQ~hmac=a6390b080c036a23c6ecedd6617ba154b1a190586fbf8c3ebb01a7cfa1e611f5';
+  const streamUrl = 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5.m3u8';
 
   const headers = {
-    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0',
-    'Referer': 'https://app.blasttv.ph/',
-    'Origin': 'https://app.blasttv.ph',
+    'User-Agent': '',
+    'Referer': '',
+    'Origin': '',
     'Accept': '*/*',
   };
 
