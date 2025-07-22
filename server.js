@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 // List of stream endpoints
 const streams = {
-  stream1: 'https://example.com/stream1/master.m3u8',
+  stream1: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/pH1yC6tG9rU2pL5zQ0nH3sI8wB4tFi.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6InBIMXlDNnRHOXJVMnBMNXpRMG5IM3NJOHdCNHRGaSIsInR5cGUiOiJwbGF5bGlzdF9hY2Nlc3MiLCJleHAiOjE3NTMxODI1MjB9.S0xFQU5FTUJFRA',
   stream2: 'https://example.com/stream2/master.m3u8',
   stream3: 'https://example.com/stream3/master.m3u8'
 };
