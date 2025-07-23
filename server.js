@@ -23,47 +23,47 @@ const streams = {
   },
   skyf1: {
     name: 'Sky Sports F1',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/888520f36cd94c5da4c71fddc1a5fc9b.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/888520f36cd94c5da4c71fddc1a5fc9b.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6Ijg4ODUyMGYzNmNkOTRjNWRhNGM3MWZkZGMxYTVmYzliIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTEyNn0.S0xFQU5FTUJFRA'
   },
   skyaction: {
     name: 'Sky Sports Action',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/wra2wlraTrewrAwohlsiCr0kUpHlswuc.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/wra2wlraTrewrAwohlsiCr0kUpHlswuc.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IndyYTJ3bHJhVHJld3JBd29obHNpQ3Iwa1VwSGxzd3VjIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTM0NH0.S0xFQU5FTUJFRA'
   },
   skyfootball: {
     name: 'Sky Sports Football',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/zuw3aYlboraPaStUP4o5ropHlbrospev.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/zuw3aYlboraPaStUP4o5ropHlbrospev.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6Inp1dzNhWWxib3JhUGFTdFVQNG81cm9wSGxicm9zcGV2IiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTQzN30.S0xFQU5FTUJFRA'
   },
   skymainevent: {
     name: 'Sky Sports Main Event',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/4reStAcaHuraStIc3o7rOdRAprEy2glB.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/4reStAcaHuraStIc3o7rOdRAprEy2glB.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IjRyZVN0QWNhSHVyYVN0SWMzbzdyT2RSQXByRXkyZ2xCIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTQ5MX0.S0xFQU5FTUJFRA'
   },
   skymix: {
     name: 'Sky Sports Mix',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/phAjl4we7iw0agitOpro8Rlcrotrufre.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/phAjl4we7iw0agitOpro8Rlcrotrufre.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6InBoQWpsNHdlN2l3MGFnaXRPcHJvOFJsY3JvdHJ1ZnJlIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTU4Nn0.S0xFQU5FTUJFRA'
   },
   skyracing: {
     name: 'Sky Sports Racing',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/x5Dodrl6Ro21RUprudEQAFRUTEfLPhec.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/x5Dodrl6Ro21RUprudEQAFRUTEfLPhec.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6Ing1RG9kcmw2Um8yMVJVcHJ1ZEVRQUZSVVRFZkxQaGVjIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTY1NH0.S0xFQU5FTUJFRA'
   },
   skygolf: {
     name: 'Sky Sports Golf',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/juDiYAyaWljAtH55usw2sWogINI49kIY.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/juDiYAyaWljAtH55usw2sWogINI49kIY.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6Imp1RGlZQXlhV2xqQXRINTV1c3cyc1dvZ0lOSTQ5a0lZIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTc0NH0.S0xFQU5FTUJFRA'
   },
   skycricket: {
     name: 'Sky Sports Cricket',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/j5ru6icHofROsespidec64w0s7lgo8ot.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/j5ru6icHofROsespidec64w0s7lgo8ot.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6Imo1cnU2aWNIb2ZST3Nlc3BpZGVjNjR3MHM3bGdvOG90IiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTc5MX0.S0xFQU5FTUJFRA'
   },
   skytennis: {
     name: 'Sky Sports Tennis',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/pA5reZusPAvispo16hUb2e5pahlthLB2.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/pA5reZusPAvispo16hUb2e5pahlthLB2.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6InBBNXJlWnVzUEF2aXNwbzE2aFViMmU1cGFobHRoTEIyIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTg1Mn0.S0xFQU5FTUJFRA'
   },
   skypremierleague: {
     name: 'Sky Sports Premier League',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/swapr5jlpHidrlfR65ofRi8a0itHI6oc.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/swapr5jlpHidrlfR65ofRi8a0itHI6oc.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6InN3YXByNWpscEhpZHJsZlI2NW9mUmk4YTBpdEhJNm9jIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTg5Nn0.S0xFQU5FTUJFRA'
   },
   skymotogp: {
     name: 'Sky Sports MotoGP',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/1c6f53f565af34b3099d28adba983591.m3u8?auth=...'
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/1c6f53f565af34b3099d28adba983591.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IjFjNmY1M2Y1NjVhZjM0YjMwOTlkMjhhZGJhOTgzNTkxIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTk2N30.S0xFQU5FTUJFRA'
   }
 };
 
