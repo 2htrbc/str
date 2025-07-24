@@ -23,11 +23,11 @@ const streams = {
   },
   skyf1: {
     name: 'Sky Sports F1',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/888520f36cd94c5da4c71fddc1a5fc9b.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6Ijg4ODUyMGYzNmNkOTRjNWRhNGM3MWZkZGMxYTVmYzliIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTEyNn0.S0xFQU5FTUJFRA'
+    url: 'https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8'
   },
   skyaction: {
     name: 'Sky Sports Action',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/wra2wlraTrewrAwohlsiCr0kUpHlswuc.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IndyYTJ3bHJhVHJld3JBd29obHNpQ3Iwa1VwSGxzd3VjIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTM0NH0.S0xFQU5FTUJFRA'
+    url: 'https://nl1.rocketdns.info:25463/live/xmltv/02a162774b/2194.m3u8?token=HkNcWEBYFAkUUQFXA1lQDQBfUgcFDVFRAVBRUFJRVAJWVQYOVgEBAwUSH0ZAFRFRUwtoXlQaXgFTWAcdERBBVhc+XV0RChQABgcAUQFDTxZGD1pSEgJUH0ARWlURXxALXVEDGx8SU0tCVUEKUg08UFcQXlRVGl5dFw1fHREKXGwBBFlYXVQUCRQAEUgRCBBEEFxZQlxUSBEACEdDUhFXEV9DBgEHABQfFFNcEV0VEU0QXBVneBpIEQcZR1RdFltcC0MOG14DQwsUHBENQD4RUUESRVJRVQFBQFsRARFJEF4EGWtaXF5YVlVEWgtdEkEOEFcCBxIURl4ND1pFXBdtQwwFFgMRAQYCBAURGQ=='
   },
   skyfootball: {
     name: 'Sky Sports Football',
