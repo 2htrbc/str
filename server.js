@@ -51,7 +51,7 @@ const streams = {
   },
   skycricket: {
     name: 'Sky Sports Cricket',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/j5ru6icHofROsespidec64w0s7lgo8ot.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6Imo1cnU2aWNIb2ZST3Nlc3BpZGVjNjR3MHM3bGdvOG90IiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTc5MX0.S0xFQU5FTUJFRA'
+    url: 'http://vad7.secsoc.cc:8080/live/play/YkVwekwzRkRMM2xTZVZOdWNHbFNNMGxDT0VGNlltZE1TSGhHVTJwUFdrUlljRXQ0TjNoM1Rsb3hiejA9/297522'
   },
   skytennis: {
     name: 'Sky Sports Tennis',
