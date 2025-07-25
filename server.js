@@ -1,11 +1,15 @@
 const express = require('express');
 const request = require('request');
-const url = require('url');
+const { URL } = require('url');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Streams map
+// Define streams
 const streams = {
+  ATBS: {
+    name: 'ATBS Global',
+    url: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/playlist.m3u8'
+  },
   mrbean: {
     name: 'Mr. Bean',
     url: 'https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8'
@@ -74,36 +78,37 @@ const streams = {
     name: 'stbs',
    url: 'https://live20.bozztv.com/akamaissh101/ssh101/stbsph88/playlist.m3u8'
     },
-  ATBS: {
-    name: 'ATBS',
-   url: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/playlist.m3u8'  
-  }  
 };
 
-// Middleware: CORS + Logging
+// Enable CORS + logging
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.originalUrl}`);
   next();
 });
 
-// Proxy HLS playlist
+// Serve .m3u8 proxy
 app.get('/playlist.m3u8', (req, res) => {
-  const streamKey = req.query.stream;
-  const stream = streams[streamKey];
+  const key = req.query.stream;
+  const stream = streams[key];
 
-  if (!stream) return res.status(400).send('Invalid stream name.');
+  if (!stream) return res.status(400).send('❌ Invalid stream key.');
 
-  const parsedBaseUrl = new URL(stream.url);
-  const basePath = parsedBaseUrl.href.substring(0, parsedBaseUrl.href.lastIndexOf('/') + 1);
+  const baseUrl = new URL(stream.url);
+  const basePath = baseUrl.href.substring(0, baseUrl.href.lastIndexOf('/') + 1);
 
   request.get(stream.url, (err, response, body) => {
     if (err || response.statusCode !== 200) {
-      return res.status(500).send('Failed to fetch playlist.');
+      return res.status(500).send('❌ Unable to fetch the playlist.');
     }
 
-    const rewritten = body.replace(/^(?!#)(.*\.m3u8|.*\.ts|.*\.aac|.*\.mp4)$/gm, (match) => {
-      const absoluteUrl = url.resolve(basePath, match.trim());
+    // Replace relative or absolute paths
+    const rewritten = body.replace(/^(?!#)(.+)$/gm, (line) => {
+      line = line.trim();
+      if (!line || line.startsWith('#')) return line;
+
+      // Handle relative + absolute
+      const absoluteUrl = new URL(line, basePath).href;
       return `/segment.ts?url=${encodeURIComponent(absoluteUrl)}`;
     });
 
@@ -112,37 +117,36 @@ app.get('/playlist.m3u8', (req, res) => {
   });
 });
 
-// Proxy media segments and nested playlists
+// Serve segments (.ts, .aac, nested .m3u8)
 app.get('/segment.ts', (req, res) => {
   const targetUrl = req.query.url;
   if (!targetUrl || !/^https?:\/\//i.test(targetUrl)) {
-    return res.status(400).send('Invalid or missing URL.');
+    return res.status(400).send('❌ Invalid or missing URL.');
   }
 
   request
     .get(targetUrl)
-    .on('response', (response) => {
-      const contentType = response.headers['content-type'] || 'application/octet-stream';
+    .on('response', (r) => {
+      const contentType = r.headers['content-type'] || 'application/octet-stream';
       res.setHeader('Content-Type', contentType);
     })
-    .on('error', () => res.status(500).send('Segment proxy error.'))
+    .on('error', () => res.status(500).send('❌ Segment proxy failed.'))
     .pipe(res);
 });
 
-// Homepage: List all streams
+// Homepage
 app.get('/', (req, res) => {
   const links = Object.entries(streams).map(
     ([key, stream]) => `<li><a href="/playlist.m3u8?stream=${key}" target="_blank">${stream.name}</a></li>`
   ).join('');
 
   res.send(`
-    <h2>🎬 HLS Proxy Server</h2>
-    <p>Select a stream:</p>
+    <h2>🎬 Fully Supported HLS Proxy</h2>
+    <p>Click a channel:</p>
     <ul>${links}</ul>
   `);
 });
 
-// Start server
 app.listen(PORT, () => {
-  console.log(`✅ HLS Proxy Server running at http://localhost:${PORT}`);
+  console.log(`✅ Server running: http://localhost:${PORT}`);
 });
