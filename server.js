@@ -23,7 +23,7 @@ const streams = {
   },
   skyf1: {
     name: 'Sky Sports F1',
-    url: 'https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8'
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/53097.m3u8'
   },
   skyaction: {
     name: 'Sky Sports Action',
