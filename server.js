@@ -1,3 +1,11 @@
+const express = require('express');
+const request = require('request');
+const url = require('url');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Streams map
+const streams = {
   mrbean: {
     name: 'Mr. Bean',
     url: 'https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8'
@@ -71,3 +79,70 @@
    url: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/playlist.m3u8'  
   }  
 };
+
+// Middleware: CORS + Logging
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.originalUrl}`);
+  next();
+});
+
+// Proxy HLS playlist
+app.get('/playlist.m3u8', (req, res) => {
+  const streamKey = req.query.stream;
+  const stream = streams[streamKey];
+
+  if (!stream) return res.status(400).send('Invalid stream name.');
+
+  const parsedBaseUrl = new URL(stream.url);
+  const basePath = parsedBaseUrl.href.substring(0, parsedBaseUrl.href.lastIndexOf('/') + 1);
+
+  request.get(stream.url, (err, response, body) => {
+    if (err || response.statusCode !== 200) {
+      return res.status(500).send('Failed to fetch playlist.');
+    }
+
+    const rewritten = body.replace(/^(?!#)(.*\.m3u8|.*\.ts|.*\.aac|.*\.mp4)$/gm, (match) => {
+      const absoluteUrl = url.resolve(basePath, match.trim());
+      return `/segment.ts?url=${encodeURIComponent(absoluteUrl)}`;
+    });
+
+    res.setHeader('Content-Type', 'application/vnd.apple.mpegurl');
+    res.send(rewritten);
+  });
+});
+
+// Proxy media segments and nested playlists
+app.get('/segment.ts', (req, res) => {
+  const targetUrl = req.query.url;
+  if (!targetUrl || !/^https?:\/\//i.test(targetUrl)) {
+    return res.status(400).send('Invalid or missing URL.');
+  }
+
+  request
+    .get(targetUrl)
+    .on('response', (response) => {
+      const contentType = response.headers['content-type'] || 'application/octet-stream';
+      res.setHeader('Content-Type', contentType);
+    })
+    .on('error', () => res.status(500).send('Segment proxy error.'))
+    .pipe(res);
+});
+
+// Homepage: List all streams
+app.get('/', (req, res) => {
+  const links = Object.entries(streams).map(
+    ([key, stream]) => `<li><a href="/playlist.m3u8?stream=${key}" target="_blank">${stream.name}</a></li>`
+  ).join('');
+
+  res.send(`
+    <h2>🎬 HLS Proxy Server</h2>
+    <p>Select a stream:</p>
+    <ul>${links}</ul>
+  `);
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`✅ HLS Proxy Server running at http://localhost:${PORT}`);
+});
