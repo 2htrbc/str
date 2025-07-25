@@ -68,6 +68,14 @@ const streams = {
   fight: {
     name: 'fight',
    url: 'http://originhd-1.dens.tv/h/h05/02.m3u8'
+      },
+  STBS: {
+    name: 'stbs',
+   url: 'https://live20.bozztv.com/akamaissh101/ssh101/stbsph88/playlist.m3u8'
+    },
+  ATBS: {
+    name: 'ATBS',
+   url: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/playlist.m3u8'  
   }  
 };
 
