@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 const streams = {
   ATBS: {
     name: 'ATBS Global',
-    url: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/playlist.m3u8'
+    url: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/chunks.m3u8'
   },
   mrbean: {
     name: 'Mr. Bean',
@@ -76,7 +76,7 @@ const streams = {
       },
   STBS: {
     name: 'stbs',
-   url: 'https://live20.bozztv.com/akamaissh101/ssh101/stbsph88/playlist.m3u8'
+   url: 'https://live20.bozztv.com/akamaissh101/ssh101/stbsph88/chunks.m3u8'
     },
 };
 
