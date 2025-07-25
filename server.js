@@ -64,7 +64,11 @@ const streams = {
   skymotogp: {
     name: 'Sky Sports MotoGP',
     url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/1c6f53f565af34b3099d28adba983591.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IjFjNmY1M2Y1NjVhZjM0YjMwOTlkMjhhZGJhOTgzNTkxIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTk2N30.S0xFQU5FTUJFRA'
-  }
+  },
+  skymotogp: {
+    name: 'fight',
+   url: 'http://originhd-1.dens.tv/h/h05/02.m3u8'
+  }  
 };
 
 // Middleware: CORS + Logging
