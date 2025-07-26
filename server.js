@@ -26,6 +26,34 @@ const streams = {
     name: 'KidsFlix',
     url: 'https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50'
   },
+  cartoonnetwork: {
+    name: 'catoom network',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118123.m3u8'
+  },
+  Disneyjr: {
+    name: 'Disney jr',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118127.m3u8'
+  },
+  Nickelodeon: {
+    name: 'Nickelodeon',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118128.m3u8'
+  },
+  Disneychannel: {
+    name: 'disney channel',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118124.m3u8'
+  },
+  DisneyXD: {
+    name: 'Disney XD',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118126.m3u8'
+  },
+  tnt: {
+    name: 'tnt us',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118124.m3u8'
+  },
+  AMC: {
+    name: 'AMC',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/172556.m3u8'
+  },
   espn1: {
     name: 'espn1',
     url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/169421.m3u8'
