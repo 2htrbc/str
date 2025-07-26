@@ -94,6 +94,10 @@ const streams = {
     name: 'Dream star tv',
    url: 'https://live20.bozztv.com/giatvplayout7/giatv-10410/tracks-v1a1/mono.m3u8'
     },
+      STBSGLOBAL: {
+    name: 'STBS GLOBAL',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-208591/tracks-v1a1/mono.m3u8'
+    }, 
 };
 
 // Enable CORS + logging
