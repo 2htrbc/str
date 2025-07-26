@@ -150,7 +150,7 @@ const streams = {
     name: 'TVN',
    url: 'http://originhd-1.dens.tv/h/h20/02.m3u8'
     }, 
-    TVN Movies: {
+    TVNMovies: {
     name: 'TVN MOVIES',
    url: 'http://originhd-1.dens.tv/h/h21/02.m3u8'
     }, 
