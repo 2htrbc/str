@@ -32,7 +32,7 @@ const streams = {
   },
   skyaction: {
     name: 'Sky Sports Action',
-    url: 'https://nl1.rocketdns.info:25463/live/xmltv/02a162774b/2194.m3u8?token=HkNcWEBYFAkUUQFXA1lQDQBfUgcFDVFRAVBRUFJRVAJWVQYOVgEBAwUSH0ZAFRFRUwtoXlQaXgFTWAcdERBBVhc+XV0RChQABgcAUQFDTxZGD1pSEgJUH0ARWlURXxALXVEDGx8SU0tCVUEKUg08UFcQXlRVGl5dFw1fHREKXGwBBFlYXVQUCRQAEUgRCBBEEFxZQlxUSBEACEdDUhFXEV9DBgEHABQfFFNcEV0VEU0QXBVneBpIEQcZR1RdFltcC0MOG14DQwsUHBENQD4RUUESRVJRVQFBQFsRARFJEF4EGWtaXF5YVlVEWgtdEkEOEFcCBxIURl4ND1pFXBdtQwwFFgMRAQYCBAURGQ=='
+    url: 'https://s.rocketdns.info:443/live/xmltv/02a162774b/2195.m3u8'
   },
   skyfootball: {
     name: 'Sky Sports Football',
