@@ -166,6 +166,10 @@ const streams = {
     name: 'UFC',
    url: 'http://fl1.moveonjoy.com/UFC/index.m3u8'
     }, 
+    HBO: {
+    name: 'HBO',
+   url: 'http://ssliste.simpsongroups.com:80/live/zikojelica/E845P2V9ae/60672.m3u8'
+    }, 
 };
 
 // Enable CORS + logging
