@@ -161,6 +161,10 @@ const streams = {
     NHKWORLD: {
     name: 'NHKWORLD',
    url: 'http://originhd-1.dens.tv/h/h23/02.m3u8'
+          }, 
+    Aniplus: {
+    name: 'Aniplus',
+   url: 'http://originhd-1.dens.tv/h/h201/02.m3u8'
     }, 
     UFC: {
     name: 'UFC',
