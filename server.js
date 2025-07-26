@@ -29,6 +29,10 @@ const streams = {
   espn1: {
     name: 'espn1',
     url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/169421.m3u8'
+   },
+  espn2: {
+    name: 'espn2',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/169422.m3u8'   
   },  
   skyf1: {
     name: 'Sky Sports F1',
