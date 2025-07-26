@@ -78,6 +78,22 @@ const streams = {
     name: 'stbs',
    url: 'https://live20.bozztv.com/akamaissh101/ssh101/stbsph88/chunks.m3u8'
     },
+    Highlightstv: {
+    name: 'Highlighttv',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-208173/tracks-v1a1/mono.m3u8'
+    },
+    Dreamstvph: {
+    name: 'Dreams tv ph',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-209574/tracks-v1a1/mono.m3u8'
+    },
+    startvph: {
+    name: 'Star TV PHILIPPINES',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-208168/tracks-v1a1/mono.m3u8'
+    },
+    Dreamstartv: {
+    name: 'Dream star tv',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-10410/tracks-v1a1/mono.m3u8'
+    },
 };
 
 // Enable CORS + logging
