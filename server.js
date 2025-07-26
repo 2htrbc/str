@@ -40,7 +40,7 @@ const streams = {
   },
   skymainevent: {
     name: 'Sky Sports Main Event',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/4reStAcaHuraStIc3o7rOdRAprEy2glB.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IjRyZVN0QWNhSHVyYVN0SWMzbzdyT2RSQXByRXkyZ2xCIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTQ5MX0.S0xFQU5FTUJFRA'
+    url: 'http://31.220.3.103:2095/play/live.php?mac=00:1A:79:E7:32:0C&stream=175174&extension=m3u8&play_token=BKrIBeTdPJ'
   },
   skymix: {
     name: 'Sky Sports Mix',
@@ -60,7 +60,7 @@ const streams = {
   },
   skytennis: {
     name: 'Sky Sports Tennis',
-    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/klean/pA5reZusPAvispo16hUb2e5pahlthLB2.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6InBBNXJlWnVzUEF2aXNwbzE2aFViMmU1cGFobHRoTEIyIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1MzI4OTg1Mn0.S0xFQU5FTUJFRA'
+    url: 'http://31.220.3.103:2095/play/live.php?mac=00:1A:79:E7:32:0C&stream=175170&extension=.m3u8'
   },
   skypremierleague: {
     name: 'Sky Sports Premier League',
