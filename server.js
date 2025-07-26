@@ -184,7 +184,7 @@ const streams = {
           }, 
     Kplus: {
     name: 'kplus',
-   url: 'http://originhd-1.dens.tv/h/h216/02.m3u8'
+   url: 'http://originhd-1.dens.tv/h/h219/02.m3u8'
     }, 
     UFC: {
     name: 'UFC',
