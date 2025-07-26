@@ -161,7 +161,7 @@ app.get('/', (req, res) => {
   ).join('');
 
   res.send(`
-    <h2>🎬 Fully Supported HLS Proxy</h2>
+    <h2>CHANNEL LIST</h2>
     <p>Click a channel:</p>
     <ul>${links}</ul>
   `);
