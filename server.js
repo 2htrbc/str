@@ -26,9 +26,9 @@ const streams = {
     name: 'KidsFlix',
     url: 'https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50'
   },
-  canba: {
-    name: 'canba',
-    url: 'http://xxip9.top:8080/live/2072900422/jmasterman504%40gmail.com/22995.m3u8'
+  espn1: {
+    name: 'espn1',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/169421.m3u8'
   },  
   skyf1: {
     name: 'Sky Sports F1',
