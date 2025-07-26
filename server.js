@@ -133,6 +133,38 @@ const streams = {
       STBSGLOBAL: {
     name: 'STBS GLOBAL',
    url: 'https://live20.bozztv.com/giatvplayout7/giatv-208591/tracks-v1a1/mono.m3u8'
+    },
+      Celestialmovies: {
+    name: 'Celestial Movies',
+   url: 'http://originhd-1.dens.tv/h/h14/02.m3u8'
+    }, 
+    Rockaction: {
+    name: 'Rockaction',
+   url: 'http://originhd-1.dens.tv/h/h15/02.m3u8'
+    }, 
+    Rockentertaiment: {
+    name: 'Rockentertaiment',
+   url: 'http://originhd-1.dens.tv/h/h16/02.m3u8'
+    }, 
+    TVN: {
+    name: 'TVN',
+   url: 'http://originhd-1.dens.tv/h/h20/02.m3u8'
+    }, 
+    TVN Movies: {
+    name: 'TVN MOVIES',
+   url: 'http://originhd-1.dens.tv/h/h21/02.m3u8'
+    }, 
+    MCE: {
+    name: 'MCE',
+   url: 'http://originhd-1.dens.tv/h/h18/02.m3u8'
+    }, 
+    NHKWORLD: {
+    name: 'NHKWORLD',
+   url: 'http://originhd-1.dens.tv/h/h23/02.m3u8'
+    }, 
+    UFC: {
+    name: 'UFC',
+   url: 'http://fl1.moveonjoy.com/UFC/index.m3u8'
     }, 
 };
 
