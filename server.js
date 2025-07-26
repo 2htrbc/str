@@ -166,6 +166,26 @@ const streams = {
     name: 'Aniplus',
    url: 'http://originhd-1.dens.tv/h/h201/02.m3u8'
     }, 
+    KBSKOREA: {
+    name: 'KBS KOREA',
+   url: 'http://originhd-1.dens.tv/h/h241/02.m3u8'
+    }, 
+    KBSWORLD: {
+    name: 'KBSWORLD',
+   url: 'http://originhd-1.dens.tv/h/h243/02.m3u8'
+    }, 
+    KIX: {
+    name: 'KIX',
+   url: 'http://originhd-1.dens.tv/h/h220/02.m3u8'
+          }, 
+    tv5mondestyle: {
+    name: 'tv5 monde style',
+   url: 'http://originhd-1.dens.tv/h/h216/02.m3u8'
+          }, 
+    Kplus: {
+    name: 'kplus',
+   url: 'http://originhd-1.dens.tv/h/h216/02.m3u8'
+    }, 
     UFC: {
     name: 'UFC',
    url: 'http://fl1.moveonjoy.com/UFC/index.m3u8'
