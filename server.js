@@ -76,7 +76,7 @@ const streams = {
   },
   skyaction: {
     name: 'Sky Sports Action',
-    url: 'https://s.rocketdns.info:443/live/xmltv/02a162774b/2195.m3u8'
+    url: 'http://lb51.xxip9.top:25461/live/J4imiTEM45/9WJoH8jsnz/53705.m3u8?token=ThFcUhFaQQwRC1FSV1dVBgFQVQVVDAICUAZUAQ4ABQUFC1cCUVQCUwIQHkdBQURQV1g7WFQWCgdQVVMGFRFGQVBBa1oGEFkUCgADXAUXGhdCXAlUEg4AHkESClcbCREBBgIFAUAeQVNLRlcXXFRaalJQElhTURIIDRcPXxURXFxqV1FeA1wHFAkQAkceF19GRhdeX0VYXB5BAApHS1JHVxcJFgFVC1YUHxBRCkdbQkdPF14TYHwSHkEHG0dcXUBbWl0WCUBfUEMLEB5HW0ZpR1NGEENVVV1XEUBZEQkRHxBYUkxsAV0NWFZRRgxdW0UXDBdWExwWXV0NCxdcS2xDW1ERDhFXB1EHChBP'
   },
   skyfootball: {
     name: 'Sky Sports Football',
