@@ -21,6 +21,10 @@ const streams = {
   a2z: {
     name: 'a2z',
     url: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5_5.m3u8'
+      },
+  cinemo: {
+    name: 'cinemo',
+    url: 'https://d1bail49udbz1k.cloudfront.net/out/v1/78e282e04f0944f3ad0aa1db7a1be645/index_3.m3u8'
   },
   kidsflix: {
     name: 'KidsFlix',
