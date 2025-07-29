@@ -74,6 +74,26 @@ const streams = {
     name: 'Dazn F1',
     url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/53097.m3u8'
   },
+  dazn1: {
+    name: 'dazn1',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/256560.m3u8'
+   },
+  daz2: {
+    name: 'dazn2',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/25277.m3u8'       
+  },  
+  Dazn3: {
+    name: 'Dazn3',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/53097.m3u8'   
+      },
+  dazn4: {
+    name: 'dazn4',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/169421.m3u8'
+   },
+  daz5: {
+    name: 'dazn5',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/169422.m3u8'   
+  },
   skyaction: {
     name: 'Sky Sports Action',
     url: 'http://lb51.xxip9.top:25461/live/J4imiTEM45/9WJoH8jsnz/53705.m3u8?token=ThFcUhFaQQwRC1FSV1dVBgFQVQVVDAICUAZUAQ4ABQUFC1cCUVQCUwIQHkdBQURQV1g7WFQWCgdQVVMGFRFGQVBBa1oGEFkUCgADXAUXGhdCXAlUEg4AHkESClcbCREBBgIFAUAeQVNLRlcXXFRaalJQElhTURIIDRcPXxURXFxqV1FeA1wHFAkQAkceF19GRhdeX0VYXB5BAApHS1JHVxcJFgFVC1YUHxBRCkdbQkdPF14TYHwSHkEHG0dcXUBbWl0WCUBfUEMLEB5HW0ZpR1NGEENVVV1XEUBZEQkRHxBYUkxsAV0NWFZRRgxdW0UXDBdWExwWXV0NCxdcS2xDW1ERDhFXB1EHChBP'
