@@ -86,9 +86,9 @@ const streams = {
     name: 'Dazn3',
     url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/53097.m3u8'   
       },
-  dazn4: {
-    name: 'dazn4',
-    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/169421.m3u8'
+  daznlaliga: {
+    name: 'dazn laliga',
+    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/259101.m3u8'
    },
   daz5: {
     name: 'dazn5',
