@@ -10,6 +10,30 @@ const streams = {
     name: 'ATBS Global',
     url: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/chunks.m3u8'
   },
+    STBS: {
+    name: 'stbs',
+   url: 'https://live20.bozztv.com/akamaissh101/ssh101/stbsph88/chunks.m3u8'
+    },
+    Highlightstv: {
+    name: 'Highlighttv',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-208173/tracks-v1a1/mono.m3u8'
+    },
+    Dreamstvph: {
+    name: 'Dreams tv ph',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-209574/tracks-v1a1/mono.m3u8'
+    },
+    startvph: {
+    name: 'Star TV PHILIPPINES',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-208168/tracks-v1a1/mono.m3u8'
+    },
+    Dreamstartv: {
+    name: 'Dream star tv',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-10410/tracks-v1a1/mono.m3u8'
+    },
+      STBSGLOBAL: {
+    name: 'STBS GLOBAL',
+   url: 'https://live20.bozztv.com/giatvplayout7/giatv-208591/tracks-v1a1/mono.m3u8'
+    },
   "3RSTV": {
     name: '3RS TV',
     url: 'https://live20.bozztv.com/giatvplayout7/giatv-210267/tracks-v1a1/mono.m3u8'
@@ -154,30 +178,6 @@ const streams = {
     name: 'fight',
    url: 'http://originhd-1.dens.tv/h/h05/02.m3u8'
       },
-  STBS: {
-    name: 'stbs',
-   url: 'https://live20.bozztv.com/akamaissh101/ssh101/stbsph88/chunks.m3u8'
-    },
-    Highlightstv: {
-    name: 'Highlighttv',
-   url: 'https://live20.bozztv.com/giatvplayout7/giatv-208173/tracks-v1a1/mono.m3u8'
-    },
-    Dreamstvph: {
-    name: 'Dreams tv ph',
-   url: 'https://live20.bozztv.com/giatvplayout7/giatv-209574/tracks-v1a1/mono.m3u8'
-    },
-    startvph: {
-    name: 'Star TV PHILIPPINES',
-   url: 'https://live20.bozztv.com/giatvplayout7/giatv-208168/tracks-v1a1/mono.m3u8'
-    },
-    Dreamstartv: {
-    name: 'Dream star tv',
-   url: 'https://live20.bozztv.com/giatvplayout7/giatv-10410/tracks-v1a1/mono.m3u8'
-    },
-      STBSGLOBAL: {
-    name: 'STBS GLOBAL',
-   url: 'https://live20.bozztv.com/giatvplayout7/giatv-208591/tracks-v1a1/mono.m3u8'
-    },
       Celestialmovies: {
     name: 'Celestial Movies',
    url: 'http://originhd-1.dens.tv/h/h14/02.m3u8'
