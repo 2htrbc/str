@@ -54,6 +54,10 @@ const streams = {
     name: 'PINAS TV',
     url: 'https://live20.bozztv.com/akamaissh101/ssh101/hmdo/chunks.m3u8'
         },
+    "BIHMTV": {
+    name: 'BIHMTV',
+    url: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/chunks.m3u8
+        },
     "CartoonPH": {
     name: 'Catoon PH',
     url: 'https://live20.bozztv.com/giatv/giatv-cartoonchannelph/cartoonchannelph/playlist.m3u8'
@@ -197,6 +201,14 @@ const streams = {
     Kplus: {
     name: 'kplus',
    url: 'http://originhd-1.dens.tv/h/h219/02.m3u8'
+          }, 
+    mycinemaaisa: {
+    name: 'My Cinema Asia',
+   url: 'http://originhd-1.dens.tv/h/h193/index.m3u8'
+          }, 
+    myfamilychannel: {
+    name: 'My Family channel',
+   url: 'http://originhd-1.dens.tv/h/h194/index.m3u8'
     }, 
     UFC: {
     name: 'UFC',
