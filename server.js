@@ -221,7 +221,255 @@ const streams = {
     HBO: {
     name: 'HBO',
    url: 'http://ssliste.simpsongroups.com:80/live/zikojelica/E845P2V9ae/60672.m3u8'
+      },
+  True_FM_TV: {
+    name: 'True FM TV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/truefmtv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  TV_Maria: {
+    name: 'TV Maria',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/tvmaria/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  TV5: {
+    name: 'TV5',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/tv5/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  tvN_Movies_Pinoy: {
+    name: 'tvN Movies Pinoy',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/tvnmoviespinoy/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  UAAP_Varsity_Channel: {
+    name: 'UAAP Varsity Channel',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/uaapvarsitychannel/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  UNTV: {
+    name: 'UNTV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/untv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  VIVA_Cinema: {
+    name: 'VIVA Cinema',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/vivacinema/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
     }, 
+    SMNI: {
+    name: 'SMNI',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/smni/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  SOLARFLIX: {
+    name: 'SOLARFLIX',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/solarflix/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  TMC: {
+    name: 'TMC',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/tmc/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+    },
+  A2Z: {
+    name: 'A2Z',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/a2z/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  ALIW_TV: {
+    name: 'ALIW TV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/aliwtv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  ALL_TV: {
+    name: 'ALL TV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/alltv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  ANC_PH: {
+    name: 'ANC PH',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/ancph/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Billonaryo_News_Channel: {
+    name: 'Billonaryo News Channel',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/billonaryonewschannel/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Blast_Sports: {
+    name: 'Blast Sports',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/blastsports/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Boomerang: {
+    name: 'Boomerang',
+    url: 'https://ott.athenatv.net/stream/skyuk/boomerang/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Buko: {
+    name: 'Buko',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/buko/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Cartoon_Network: {
+    name: 'Cartoon Network',
+    url: 'https://ott.athenatv.net/stream/skyuk/cartoonnetwork/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Cartoonito: {
+    name: 'Cartoonito',
+    url: 'https://ott.athenatv.net/stream/skyuk/cartoonito/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Celestial_Movies_Pinoy: {
+    name: 'Celestial Movies Pinoy',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/celestialmoviespinoy/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Cinema_One: {
+    name: 'Cinema One',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/cinemaone/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Cinemo: {
+    name: 'Cinemo',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/cinemo/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  CLTV_36: {
+    name: 'CLTV 36',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/cltv36/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  DZMM_Teleradyo_HD: {
+    name: 'DZMM Teleradyo HD',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/dzmmteleradyo/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  DZMM_Teleradyo_SD: {
+    name: 'DZMM Teleradyo SD',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/dzmmteleradyosd/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Premier_Sports: {
+    name: 'Premier Sports',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/premiersports/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Premier_Sports_2: {
+    name: 'Premier Sports 2',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/premiersports2/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Premier_Football: {
+    name: 'Premier Football',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/premierfootball/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Tap_Action_Flix: {
+    name: 'Tap Action Flix',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/tapactionflix/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Tap_Edge: {
+    name: 'Tap Edge',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/tapedge/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Tap_Movies: {
+    name: 'Tap Movies',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/tapmovies/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Tap_Sports: {
+    name: 'Tap Sports',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/tapsports/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Tap_TV: {
+    name: 'Tap TV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/taptv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  DZRH_TV: {
+    name: 'DZRH TV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/dzrhtv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  GMA: {
+    name: 'GMA',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/gma/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  GTV: {
+    name: 'GTV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/gtv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  IBC13: {
+    name: 'IBC13',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/ibc13/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  INC_TV: {
+    name: 'INC TV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/inctv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Jeepney_TV: {
+    name: 'Jeepney TV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/jeepneytv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Kapamilya_Channel: {
+    name: 'Kapamilya Channel',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/kapamilyachannel/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Knowledge_Channel: {
+    name: 'Knowledge Channel',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/knowledgechannel/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Metro_Channel: {
+    name: 'Metro Channel',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/metrochannel/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  MPTV: {
+    name: 'MPTV',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/mptv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  MYX_PH: {
+    name: 'MYX PH',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/myxph/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  NBA_TV_Philippines: {
+    name: 'NBA TV Philippines',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/nbatvphilippines/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  NET25: {
+    name: 'NET25',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/net25/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Nick_Jr: {
+    name: 'Nick Jr',
+    url: 'https://ott.athenatv.net/stream/skyuk/nickjr/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Nickelodeon: {
+    name: 'Nickelodeon',
+    url: 'https://ott.athenatv.net/stream/skyuk/nickelodeon/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  Nicktoons: {
+    name: 'Nicktoons',
+    url: 'https://ott.athenatv.net/stream/skyuk/nicktoons/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  One_News: {
+    name: 'One News',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/onenews/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+  One_PH: {
+    name: 'One PH',
+    url: 'https://ott.athenatv.net/stream/phcathenatv/oneph/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+  },
+One_Sports: {
+  name: 'One Sports',
+  url: 'https://ott.athenatv.net/stream/phcathenatv/onesports/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
+One_Sports_Plus: {
+  name: 'One Sports +',
+  url: 'https://ott.athenatv.net/stream/phcathenatv/onesports-1/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
+PBA_Rush: {
+  name: 'PBA Rush',
+  url: 'https://ott.athenatv.net/stream/phcathenatv/pbarush/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
+PBO: {
+  name: 'PBO',
+  url: 'https://ott.athenatv.net/stream/phcathenatv/pbo/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
+Premier_Sports_1: {
+  name: 'Premier Sports 1',
+  url: 'https://ott.athenatv.net/stream/skyie/premiersports1/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
+Premier_Sports_2: {
+  name: 'Premier Sports 2',
+  url: 'https://ott.athenatv.net/stream/skyie/premiersports2/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
+PPV_Channel_1: {
+  name: 'PPV Channel 1',
+  url: 'https://ott.athenatv.net/stream/phcathenatv/ppvchannel1/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
+PPV_Channel_2: {
+  name: 'PPV Channel 2',
+  url: 'https://ott.athenatv.net/stream/phcathenatv/ppvchannel2/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
+PTV: {
+  name: 'PTV',
+  url: 'https://ott.athenatv.net/stream/phcathenatv/ptv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
+RPTV: {
+  name: 'RPTV',
+  url: 'https://ott.athenatv.net/stream/phcathenatv/rptv/stream_0.m3u8?u=phc-free&p=70ebfe055fb9df4f9b91b21907a517a27f6c97076aedda2c268712ec6766bf52'
+},
 };
 
 // Enable CORS + logging
