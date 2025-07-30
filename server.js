@@ -54,7 +54,7 @@ const streams = {
     name: 'PINAS TV',
     url: 'https://live20.bozztv.com/akamaissh101/ssh101/hmdo/chunks.m3u8'
         },
-    "Cartoon PH": {
+    "CartoonPH": {
     name: 'Catoon PH',
     url: 'https://live20.bozztv.com/giatv/giatv-cartoonchannelph/cartoonchannelph/playlist.m3u8'
     },
