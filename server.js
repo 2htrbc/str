@@ -10,6 +10,22 @@ const streams = {
     name: 'ATBS Global',
     url: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/chunks.m3u8'
   },
+  "3RSTV": {
+    name: '3RS TV',
+    url: 'https://live20.bozztv.com/giatvplayout7/giatv-210267/tracks-v1a1/mono.m3u8'
+  },
+  "3RSMOVIE": {
+    name: '3RS MOVIE',
+    url: 'https://live20.bozztv.com/giatvplayout7/giatv-210273/tracks-v1a1/mono.m3u8'
+  },
+  "3RSDRAMA": {
+    name: '3RS DRAMA',
+    url: 'https://live20.bozztv.com/giatvplayout7/giatv-210291/tracks-v1a1/mono.m3u8'
+  },
+  "KQTV": {
+    name: 'KQTV',
+    url: 'https://live20.bozztv.com/giatvplayout7/giatv-209998/tracks-v1a1/mono.m3u8'
+  },
   mrbean: {
     name: 'Mr. Bean',
     url: 'https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8'
