@@ -56,7 +56,7 @@ const streams = {
         },
     "BIHMTV": {
     name: 'BIHMTV',
-    url: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/chunks.m3u8
+    url: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/chunks.m3u8'
         },
     "CartoonPH": {
     name: 'Catoon PH',
@@ -122,8 +122,8 @@ const streams = {
     name: 'tnt us',
     url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118124.m3u8'
   },
-  AMC: {
-    name: 'AMC',
+  AMC1: {
+    name: 'AMC1',
     url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/172556.m3u8'
   },
   espn1: {
