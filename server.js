@@ -58,6 +58,10 @@ const streams = {
     name: 'BIHMTV',
     url: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/chunks.m3u8'
         },
+    AugsburgvsCrystalPalace: {
+    name: 'Augsburg vs Crystal Palace',
+    url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/omni-vaquint/1789d3c7e5afff223f9a1a076d9e61af.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IjE3ODlkM2M3ZTVhZmZmMjIzZjlhMWEwNzZkOWU2MWFmIiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1NDA3NDg3Nn0.P3VjUnVrbFN0OWdV'
+  },
     "CartoonPH": {
     name: 'Catoon PH',
     url: 'https://live20.bozztv.com/giatv/giatv-cartoonchannelph/cartoonchannelph/playlist.m3u8'
