@@ -108,15 +108,15 @@ const streams = {
   },
   JungoTV: {
     name: 'Jungo TV',
-    url: 'https://jungotvstream.chanall.tv/jungotv/jungopinoytv/stream.m3u8'
+    url: 'https://jungotvstream.chanall.tv/jungotv/jungopinoytv/playlist_720p.m3u8'
   },
   Hallypop: {
     name: 'Hallypop',
-    url: 'https://jungotvstream.chanall.tv/jungotv/hallypop/stream.m3u8'
+    url: 'https://jungotvstream.chanall.tv/jungotv/hallypop/playlist_720p.m3u8'
   },
   ScreamFlix: {
     name: 'Scream Flix',
-    url: 'https://jungotvstream.chanall.tv/jungotv/screamflix/stream.m3u8'
+    url: 'https://jungotvstream.chanall.tv/jungotv/screamflix/playlist_720p.m3u8'
   },
   tnt: {
     name: 'tnt us',
