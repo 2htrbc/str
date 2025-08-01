@@ -106,6 +106,18 @@ const streams = {
     name: 'Disney XD',
     url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118126.m3u8'
   },
+  JungoTV: {
+    name: 'Jungo TV',
+    url: 'https://jungotvstream.chanall.tv/jungotv/jungopinoytv/stream.m3u8'
+  },
+  Hallypop: {
+    name: 'Hallypop',
+    url: 'https://jungotvstream.chanall.tv/jungotv/hallypop/stream.m3u8'
+  },
+  ScreamFlix: {
+    name: 'Scream Flix',
+    url: 'https://jungotvstream.chanall.tv/jungotv/screamflix/stream.m3u8'
+  },
   tnt: {
     name: 'tnt us',
     url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118124.m3u8'
