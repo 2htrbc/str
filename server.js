@@ -177,7 +177,8 @@ const streams = {
   TSN_2: "http://fl5.moveonjoy.com/TSN_2/mono.m3u8",
   TSN_3: "http://fl5.moveonjoy.com/TSN_3/mono.m3u8",
   TSN_4: "http://fl5.moveonjoy.com/TSN_4/mono.m3u8",
-  TSN_5: "http://fl5.moveonjoy.com/TSN_5/mono.m3u8"
+  TSN_5: "http://fl5.moveonjoy.com/TSN_5/mono.m3u8",
+  UNTOLD_2025: "https://tevh.9ljp.com/vod/1/2025/08/01/bd4120b363da/index5.m3u8?wsSecret=6e520070865cdb80edac26888b4fb7d9&wsTime=688e0ebd"
 };
 
 // 🎬 Proxy for .m3u8 playlist
