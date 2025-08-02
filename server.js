@@ -58,7 +58,7 @@ const streams = {
     name: 'BIHMTV',
     url: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/chunks.m3u8'
         },
-    "PFLWorldTournament:Finals": {
+    "PFL_World_Tournament_Finals": {
     name: 'Augsburg vs Crystal Palace',
     url: 'https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/omni-vaquint/83785fecd1eebea14991e492e1bc3e27.m3u8?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHJlYW1JZCI6IjgzNzg1ZmVjZDFlZWJlYTE0OTkxZTQ5MmUxYmMzZTI3IiwidHlwZSI6InBsYXlsaXN0X2FjY2VzcyIsImV4cCI6MTc1NDEwODgyM30.P3VjUnVrbFN0OWdV'
   },
