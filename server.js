@@ -1,12 +1,8 @@
-const express = require('express');
-const request = require('request');
-const { URL } = require('url');
+const express = require('express'); const request = require('request'); const { URL } = require('url');
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const app = express(); const PORT = process.env.PORT || 3000;
 
-// Stream list
-const streams = {
+// NOTE: The streams object has been omitted for brevity. Keep your full stream list there. const streams = {
   ATBS: {
     name: 'ATBS Global',
     url: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/chunks.m3u8'
@@ -695,82 +691,33 @@ const streams = {
     name: "TSN 5",
     url: "http://fl5.moveonjoy.com/TSN_5/mono.m3u8"
   }
-};
+ };
 
-// 🎬 Home page: Display all channels
-app.get('/', (req, res) => {
-  const html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>IPTV Channel List</title>
-      <style>
-        body { font-family: Arial, sans-serif; background: #111; color: #fff; padding: 20px; }
-        h1 { color: #00d8ff; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 10px 0; }
-        a { color: #00d8ff; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-      </style>
-    </head>
-    <body>
-      <h1>📺 CHANNEL LIST</h1>
-      <ul>
-        ${Object.entries(streams).map(([key, stream]) => `
-          <li><a href="/${key}/index.m3u8" target="_blank">${stream.name}</a></li>
-        `).join('')}
-      </ul>
-    </body>
-    </html>
-  `;
-  res.send(html);
+// Home page: list of channels app.get('/', (req, res) => { const html = <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>IPTV Channel List</title> <style> body { font-family: Arial, sans-serif; background: #111; color: #fff; padding: 20px; } h1 { color: #00d8ff; } ul { list-style: none; padding: 0; } li { margin: 10px 0; } a { color: #00d8ff; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } </style> </head> <body> <h1>\uD83C\uDF9A CHANNEL LIST</h1> <ul> ${Object.entries(streams).map(([key, stream]) => <li><a href="/${key}/index.m3u8" target="_blank">${stream.name}</a></li> ).join('')} </ul> </body> </html> ; res.send(html); });
+
+// Proxy master playlist (.m3u8) app.get('/:stream/index.m3u8', (req, res) => { const key = req.params.stream; const stream = streams[key];
+
+if (!stream) return res.status(404).send('❌ Stream not found');
+
+const sourceUrl = stream.url; const baseUrl = new URL(sourceUrl); const basePath = baseUrl.href.substring(0, baseUrl.href.lastIndexOf('/') + 1);
+
+request.get(sourceUrl, (err, response, body) => { if (err || response.statusCode !== 200) { return res.status(500).send('❌ Failed to load stream'); }
+
+const rewritten = body.replace(/^(?!#)([^\n\r]+)$/gm, (line) => {
+  line = line.trim();
+  if (!line || line.startsWith('#')) return line;
+  const abs = new URL(line, basePath).href;
+  return `/segment.ts?url=${encodeURIComponent(abs)}`;
 });
 
-// 🧪 Proxy HLS playlist: /:stream/index.m3u8
-app.get('/:stream/index.m3u8', (req, res) => {
-  const key = req.params.stream;
-  const stream = streams[key];
+res.setHeader('Content-Type', 'application/vnd.apple.mpegurl');
+res.send(rewritten);
 
-  if (!stream) return res.status(404).send('❌ Stream not found');
+}); });
 
-  const sourceUrl = stream.url;
-  const baseUrl = new URL(sourceUrl);
-  const basePath = baseUrl.href.substring(0, baseUrl.href.lastIndexOf('/') + 1);
+// Proxy video segments (.ts) app.get('/segment.ts', (req, res) => { const { url } = req.query; if (!url) return res.status(400).send('❌ URL missing');
 
-  request.get(sourceUrl, (err, response, body) => {
-    if (err || response.statusCode !== 200) {
-      return res.status(500).send('❌ Failed to load stream');
-    }
+request({ url, headers: { 'User-Agent': req.headers['user-agent'] || '' } }) .on('error', () => res.status(500).send('❌ Failed to load segment')) .pipe(res); });
 
-    const rewritten = body.replace(/^(?!#)(.+)$/gm, (line) => {
-      line = line.trim();
-      if (!line || line.startsWith('#')) return line;
-      const abs = new URL(line, basePath).href;
-      return `/segment.ts?url=${encodeURIComponent(abs)}`;
-    });
+// Start server app.listen(PORT, () => { console.log(✅ Server running on port ${PORT}); });
 
-    res.setHeader('Content-Type', 'application/vnd.apple.mpegurl');
-    res.send(rewritten);
-  });
-});
-
-// 📦 Proxy segments like .ts/.aac/.vtt
-app.get('/segment.ts', (req, res) => {
-  const { url } = req.query;
-  if (!url) return res.status(400).send('❌ No segment URL provided');
-  request.get(url).on('error', () => res.status(500).send('❌ Error fetching segment')).pipe(res);
-});
-
-// 🔁 Optional: Backward compatibility ?stream=NAME
-app.get('/playlist.m3u8', (req, res) => {
-  const key = req.query.stream;
-  if (!streams[key]) return res.status(404).send('❌ Stream not found');
-  res.redirect(`/${key}/index.m3u8`);
-});
-
-// 🚀 Start the server
-app.listen(PORT, () => {
-  console.log(`✅ IPTV Proxy Server running at http://localhost:${PORT}`);
-});
