@@ -1,15 +1,15 @@
 {
   "name": "iptv-proxy-server",
   "version": "1.0.0",
-  "description": "Node.js Express IPTV streaming proxy with clean URLs",
+  "description": "IPTV proxy server that rewrites M3U8 playlists and segments",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
     "request": "^2.88.2"
-  },
-  "author": "",
-  "license": "MIT"
+  }
 }
