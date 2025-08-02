@@ -740,7 +740,7 @@ app.get('/', (req, res) => {
       </style>
     </head>
     <body>
-      <h1>📺 IPTV Channel List</h1>
+      <h1>📺 CHANNEL LIST</h1>
       <ul>
         ${Object.entries(streams).map(([key, stream]) => `
           <li><a href="/${key}/index.m3u8" target="_blank">${stream.name}</a></li>
