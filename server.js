@@ -138,30 +138,6 @@ const streams = {
   espn2: {
     name: 'espn2',
     url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/169422.m3u8'   
-  },  
-  Daznf1: {
-    name: 'Dazn F1',
-    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/53097.m3u8'
-  },
-  dazn1: {
-    name: 'dazn1',
-    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/256560.m3u8'
-   },
-  daz2: {
-    name: 'dazn2',
-    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/25277.m3u8'       
-  },  
-  Dazn3: {
-    name: 'Dazn3',
-    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/53097.m3u8'   
-      },
-  daznlaliga: {
-    name: 'dazn laliga',
-    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/259101.m3u8'
-   },
-  daz5: {
-    name: 'dazn5',
-    url: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/169422.m3u8'   
 },
   fight: {
     name: 'fight',
