@@ -136,7 +136,7 @@ const streams = {
   PopTV_East: "http://fl3.moveonjoy.com/Pop_TV/mono.m3u8",
   ReelzChannel: "http://fl3.moveonjoy.com/REELZ/mono.m3u8",
   Revolt: "http://fl3.moveonjoy.com/REVOLT/mono.m3u8",
-  SEC_Network: "http://fl3.moveonjoy.com/SEC_NETWORK/mono.m3u8"
+  SEC_Network: "http://fl3.moveonjoy.com/SEC_NETWORK/mono.m3u8",
   Showtime_East: "http://fl3.moveonjoy.com/SHOWTIME/mono.m3u8",
   Showtime_2_East: "http://fl3.moveonjoy.com/SHOWTIME_2/mono.m3u8",
   Showtime_Extreme_East: "http://fl3.moveonjoy.com/SHOWTIME_EXTREME/mono.m3u8",
