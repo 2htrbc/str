@@ -1,7 +1,7 @@
 {
-  "name": "hls-proxy",
+  "name": "iptv-proxy-server",
   "version": "1.0.0",
-  "description": "HLS M3U8 + TS proxy for IPTV streams",
+  "description": "Node.js Express IPTV streaming proxy with friendly URLs",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,5 +9,14 @@
   "dependencies": {
     "express": "^4.18.2",
     "request": "^2.88.2"
-  }
+  },
+  "keywords": [
+    "iptv",
+    "hls",
+    "express",
+    "proxy",
+    "m3u8"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }
