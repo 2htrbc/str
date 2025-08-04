@@ -227,7 +227,7 @@ Tvn_Movies_Pinoy: "https://starofvenus.dpdns.org/tvnmovies_pinoy/playlist.m3u8",
 Blast_Sports: "https://starofvenus.dpdns.org/blast_sports/playlist.m3u8",
 Premier_Football: "https://starofvenus.dpdns.org/premier_football/playlist.m3u8",
 Studio_Universal: "https://starofvenus.dpdns.org/studio_universal/playlist.m3u8",
-Outdoor: "https://starofvenus.dpdns.org/outdoor/playlist.m3u8"
+Outdoor: "https://starofvenus.dpdns.org/outdoor/playlist.m3u8",
 
   
   UNTOLD_2025: "https://tevh.9ljp.com/vod/1/2025/08/01/bd4120b363da/index5.m3u8?wsSecret=6e520070865cdb80edac26888b4fb7d9&wsTime=688e0ebd"
