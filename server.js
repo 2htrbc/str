@@ -236,7 +236,8 @@ Premier_Football: "https://starofvenus.dpdns.org/premier_football/playlist.m3u8"
 Studio_Universal: "https://starofvenus.dpdns.org/studio_universal/playlist.m3u8",
 Outdoor: "https://starofvenus.dpdns.org/outdoor/playlist.m3u8",
 
-  philippines_channel: 'https://ott.m3u8..com/gma/stream/manifest.m3u8',
+  heartofasia: 'https://ott.m3u8.nathcreqtives.com/heartofasia/stream/manifest.m3u8',
+  iheartmovies: 'https://ott.m3u8.nathcreqtives.com/iheartmovies/stream/manifest.m3u8',
   
   gma: 'https://ott.m3u8.nathcreqtives.com/gma/stream/manifest.m3u8',
 tv5: 'https://ott.m3u8.nathcreqtives.com/tv5/stream/manifest.m3u8',
