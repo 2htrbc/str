@@ -297,10 +297,10 @@ tapedge: 'https://ott.m3u8.nathcreqtives.com/tapedge/manifest.m3u8',
 paramount: 'https://ott.m3u8.nathcreqtives.com/paramountnetwork/manifest.m3u8',
 hitsnow: 'https://ott.m3u8.nathcreqtives.com/hitsnow/manifest.m3u8',
 tmc: 'https://ott.m3u8.nathcreqtives.com/tmc/manifest.m3u8',
-amc: 'https://ott.m3u8.nathcreqtives.com/amc/manifest.m3u8',
+amcs2: 'https://ott.m3u8.nathcreqtives.com/amc/manifest.m3u8',
 history: 'https://ott.m3u8.nathcreqtives.com/history/manifest.m3u8',
 warnertv: 'https://ott.m3u8.nathcreqtives.com/warnertv/manifest.m3u8',
-hits: 'https://ott.m3u8.nathcreqtives.com/hits/manifest.m3u8',
+HITS: 'https://ott.m3u8.nathcreqtives.com/hits/manifest.m3u8',
 
 asianfood: 'https://ott.m3u8.nathcreqtives.com/asianfoodnetwork/manifest.m3u8',
 travel: 'https://ott.m3u8.nathcreqtives.com/travelchannel/manifest.m3u8',
@@ -311,8 +311,11 @@ discovery: 'https://ott.m3u8.nathcreqtives.com/discoverychannel/manifest.m3u8',
 crimeinvestigation: 'https://ott.m3u8.nathcreqtives.com/crimeinvestigation/manifest.m3u8',
 
 animax: 'https://ott.m3u8.nathcreqtives.com/animax/manifest.m3u8',
-aniplus: 'https://ott.m3u8.nathcreqtives.com/aniplus/manifest.m3u8',
+anipluss2: 'https://ott.m3u8.nathcreqtives.com/aniplus/manifest.m3u8',
+starmovie: 'https://ott.miswa.org/stream/direct/starmovieshd-1/master.m3u8?u=miswatv&p=7ab1b6f24a1e2c58d54a3e9ed2eb12c7d2745bf8458603e59ab276e749821897',
+starmovieselect: 'https://ott.miswa.org/stream/direct/starmoviesselect/master.m3u8?u=miswatv&p=7ab1b6f24a1e2c58d54a3e9ed2eb12c7d2745bf8458603e59ab276e749821897',
 
+  
 myx: 'https://ott.m3u8.nathcreqtives.com/myxglobal/manifest.m3u8',
   UNTOLD_2025: "https://tevh.9ljp.com/vod/1/2025/08/01/bd4120b363da/index5.m3u8?wsSecret=6e520070865cdb80edac26888b4fb7d9&wsTime=688e0ebd"
 };
