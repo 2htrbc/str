@@ -35,7 +35,7 @@ movies_action: 'https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c829
   mrbean: 'https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8',
   kartoon: 'https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-kartoonchannel-samsungnz/playlist.m3u8',
   a2z: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5_5.m3u8',
-  tvnmoviespinoy: 'https://dice-live-ap.akamaized.net/hls/live/2000230/274551-300568/exchange274551xuwnr_274551_1400/chunklist.m3u8?hdntl=exp=1754237147~acl=%2F*~id=305edd79-9a72-49bc-8202-961b79e7dce4~data=hdntl,dWlkPUNUZmR0S3xlZTU2N2U3NS02NTg1LTQwOGEtYmIzOS1hZDhlYjIzMDVmNjMmaXA9MTI2LjIwOS41My4xODYmZXhwPTE3NTQyMzcxNzMmZWlkPTI3NDU1MSZjaWQ9ZGNlLnRhcGdvJm9pZD0zMjUmdHlwZT1MSVZF~hmac=b7e70cb35a05714068f9092b5e333c72aceb0b48c86fac94b64f086d1a686a05',
+  espn_vivo: 'http://200.26.188.66:80/live/aHBCJPGQ/aQdgWWp/3072.m3u8',
   cinemo: 'https://d1bail49udbz1k.cloudfront.net/out/v1/78e282e04f0944f3ad0aa1db7a1be645/index_3.m3u8',
   kidsflix: 'https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50',
   cartoonnetwork: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118123.m3u8',
