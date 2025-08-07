@@ -323,7 +323,7 @@ crimeinvestigation: 'https://ott.m3u8.nathcreqtives.com/crimeinvestigation/strea
 
 animax: 'https://ott.m3u8.nathcreqtives.com/animax/stream/manifest.m3u8',
 anipluss2: 'https://ott.m3u8.nathcreqtives.com/aniplus/stream/manifest.m3u8',
-starmovie: 'https://ott.miswa.org/stream/direct/starmovieshd-1/stream_0.m3u8?u=miswatv&p=7ab1b6f24a1e2c58d54a3e9ed2eb12c7d2745bf8458603e59ab276e749821897&uid=52210434',
+starmovies_new: 'https://ott.miswa.org/stream/direct/starmovieshd-1/stream_0.m3u8?u=miswatv&p=7ab1b6f24a1e2c58d54a3e9ed2eb12c7d2745bf8458603e59ab276e749821897&uid=52210434',
 starmovie_select: 'https://ott.miswa.org/stream/direct/starmoviesselect/stream_0.m3u8?u=miswatv&p=7ab1b6f24a1e2c58d54a3e9ed2eb12c7d2745bf8458603e59ab276e749821897&uid=52210434',  
 myx: 'https://ott.m3u8.nathcreqtives.com/myxglobal/stream/manifest.m3u8',
  
