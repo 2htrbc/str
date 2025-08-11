@@ -41,6 +41,7 @@ movies_action: 'https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c829
   espn_vivo: 'http://200.26.188.66:80/live/aHBCJPGQ/aQdgWWp/3072.m3u8',
   cinemo: 'https://d1bail49udbz1k.cloudfront.net/out/v1/78e282e04f0944f3ad0aa1db7a1be645/index_3.m3u8',
   kidsflix: 'https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50',
+  tvmovies_pinoy: 'https://dice-live-ap.akamaized.net/hls/live/2000230/274551-300568/exchange274551xuwnr_274551_3000/chunklist.m3u8?hdntl=exp=1754957825~acl=%2F*~id=1ab0d36f-9275-4d75-8ec4-cd23d52a3588~data=hdntl,dWlkPUNUZmR0S3xlZTU2N2U3NS02NTg1LTQwOGEtYmIzOS1hZDhlYjIzMDVmNjMmaXA9MTgwLjE5MC4xNzUuMjAxJmV4cD0xNzU0OTU3ODU1JmVpZD0yNzQ1NTEmY2lkPWRjZS50YXBnbyZvaWQ9MzI1JnR5cGU9TElWRQ~hmac=50160d1879e0d0176bbb921334a5dfa4fae516302341633ea9485a05da9186a0',
   cartoonnetwork: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118123.m3u8',
   Disneyjr: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118127.m3u8',
   Nickelodeon: 'https://nxt.plus:8443/live/restreamstalker/mzfJKHLK86fy/118128.m3u8',
