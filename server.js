@@ -10,6 +10,7 @@ app.use(cors());
 
 // ✅ Stream channel map (key: name, value: m3u8 URL)
 const streams = {
+  
   ATBS_iwatchtv: 'https://live20.bozztv.com/giatv/giatv-ATBSGLOBAL/ATBSGLOBAL/chunks.m3u8',
   STBS_iwatchtv: 'https://live20.bozztv.com/akamaissh101/ssh101/stbsph88/chunks.m3u8',
   Highlightstv_iwatchtv: 'https://live20.bozztv.com/giatvplayout7/giatv-208173/tracks-v1a1/mono.m3u8',
@@ -20,6 +21,7 @@ const streams = {
   "3RSTV_iwatchtv": 'https://live20.bozztv.com/giatvplayout7/giatv-210267/tracks-v1a1/mono.m3u8',
   "3RSMOVIE_iwatchtv": 'https://live20.bozztv.com/giatvplayout7/giatv-210273/tracks-v1a1/mono.m3u8',
   "3RSDRAMA_iwatchtv": 'https://live20.bozztv.com/giatvplayout7/giatv-210291/tracks-v1a1/mono.m3u8',
+  colors_tv_iwatchtv: 'https://live20.bozztv.com/giatvplayout7/giatv-210171/tracks-v1a1/mono.ts.m3u8',
   KQTV: 'https://live20.bozztv.com/giatvplayout7/giatv-209998/tracks-v1a1/mono.m3u8',
   PINASTV: 'https://live20.bozztv.com/akamaissh101/ssh101/hmdo/chunks.m3u8',
   BIHMTV: 'https://live20.bozztv.com/giatv/giatv-bihmtv/bihmtv/chunks.m3u8',
