@@ -38,8 +38,8 @@ movies_action: 'https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c829
   kartoon: 'https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-kartoonchannel-samsungnz/playlist.m3u8',
   junglebook: 'https://cc-4bhi5osabejc9.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-4bhi5osabejc9/junglebook.m3u8',
   a2z: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5_5.m3u8',
-  starmovieshd: 'https://smt.520761.xyz/Smart.php?id=starmovies_raj',
-  
+  starmovieshd: 'https://greenapple.linuxproxy.dpdns.org/proxy',
+  sonypix: 'https://iptv.linuxproxy.dpdns.org/2101.ts',
  gmapinoytv: 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-abscbn-gma-x7-dash-abscbnono/7c693236-e0c1-40a3-8bd0-bb25e43f5bfc/index.mpd',  
   aniplusasia: 'https://ott.udptv.net/stream/iptv/aniplus/master.m3u8?u=cocked&p=dd0abb52723d22acc0f97fe0336480feaa88a37ecda55a138a8d5e0ee14b0664',
   espn_vivo: 'http://200.26.188.66:80/live/aHBCJPGQ/aQdgWWp/3072.m3u8',
