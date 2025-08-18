@@ -40,7 +40,7 @@ movies_action: 'https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c829
   a2z: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/tv5_5.m3u8',
   starmovieshd: 'https://greenapple.linuxproxy.dpdns.org/proxy',
   sonypix: 'https://iptv.linuxproxy.dpdns.org/2101.ts',
- gma: 'http://143.44.136.110:6610/001/2/ch00000090990000001093/sec-f1-v1-a1.m3u8?usersessionid=&IASHttpSessionId=OTT2388020250818020007000282&m3u8_level=2&ztecid=ch00000090990000001093&virtualDomain=001.live_hls.zte.com&ispcode=55',  
+ 
   aniplusasia: 'https://ott.udptv.net/stream/iptv/aniplus/master.m3u8?u=cocked&p=dd0abb52723d22acc0f97fe0336480feaa88a37ecda55a138a8d5e0ee14b0664',
   espn_vivo: 'http://200.26.188.66:80/live/aHBCJPGQ/aQdgWWp/3072.m3u8',
   cinemo: 'https://d1bail49udbz1k.cloudfront.net/out/v1/78e282e04f0944f3ad0aa1db7a1be645/index_3.m3u8',
